@@ -16,7 +16,11 @@ public class displaySearch extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_search);
-        ArrayList<String> searchArray = new ArrayList<String>();
+
+    }
+}
+
+       /* ArrayList<String> searchArray = new ArrayList<String>();
         searchArray.add("Goodbye!");
         searchArray.add("Hello!");
         searchArray.add("Hola!");
@@ -37,6 +41,4 @@ public class displaySearch extends AppCompatActivity {
         searchArray.add("Hola!");
         ListView listView = (ListView) findViewById(R.id.searchList);
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, searchArray);
-        listView.setAdapter(adapter);
-    }
-}
+        listView.setAdapter(adapter);*/ 
