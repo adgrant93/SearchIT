@@ -1,0 +1,28 @@
+The Function and Purpose:
+
+
+
+
+
+
+Steps to take and notes:
+
+4_15_2018 - Currently, the application successfully opens up the aligned technology search page in a second activity. I have placed an activity that will sit between the two activities. It's purpose will be to display the results of the search in a ListView. It will also handle populating the list during the onCreate method. There are a series of goals and they are listed below. Next up, the list view!
+
+Goals for baseline Google Sites Functionality:
+
+* Create a ListView that can be dynamically populated with strings (will populate with 3 hardcoded test entries to make sure it is functional
+
+* Create functions that will append the search to 'sites.aligned.....' and will scrape the texts/hyperlinks of each query result and store them in strings. The Name/text will populate the view while the hyperlinks will be stored in a String Vector. In this case, the number of hyperlinks will ALWAYS be the same as the number of query results. The queries and hyperlinks can be linked by their array/vector placement. This will be done in the above view
+ 
+* The hyper 
+
+
+
+Random ideas:
+
+Be able to choose "First 5" for Sites, Drive, or both
+
+Choose which to search
+
+Sort Feature (ABC, Date, Relevance (Default, no search params)
