@@ -27,7 +27,7 @@ public class displaySearch extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.searchResultRecyclerView);
         mRecyclerView.setHasFixedSize(true); //For efficiency since all views in list will be same size
         mLayoutManager = new LinearLayoutManager(this); //Determines how the layout will be displayed (Linear)
-        mRecyclerView.setLayoutManager(mLayoutManager); //Sets the newly created 
+        mRecyclerView.setLayoutManager(mLayoutManager); //Sets the newly created
         Results results = new Results("Hello Bob", "I said HOW ARE YOU TODAY BOB!");
         resultsList.add(results);
 
