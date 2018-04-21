@@ -2,6 +2,8 @@ package com.jskel.android.searchit;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -9,13 +11,23 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class displaySearch extends AppCompatActivity {
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mlayoutManager;
+    private List<Results> resultsList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_search);
+        mRecyclerView = (RecyclerView) findViewById(R.id.searchResultRecyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        mlayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mlayoutManager);
 
     }
 }
