@@ -26,12 +26,16 @@ public class displaySearch extends AppCompatActivity {
         setContentView(R.layout.activity_display_search);
         mRecyclerView = (RecyclerView) findViewById(R.id.searchResultRecyclerView);
         mRecyclerView.setHasFixedSize(true); //For efficiency since all views in list will be same size
+
         mLayoutManager = new LinearLayoutManager(this); //Determines how the layout will be displayed (Linear)
         mRecyclerView.setLayoutManager(mLayoutManager); //Sets the newly created
-        Results results = new Results("Hello Bob", "I said HOW ARE YOU TODAY BOB!");
-        resultsList.add(results);
 
-
+        Results results2 = new Results("Hi There");
+        Results hi = new Results("ok dad");
+        resultsList.add(results2);
+        resultsList.add(hi);
+        mAdapter = new DisplaySearchAdapter(resultsList);
+        mRecyclerView.setAdapter(mAdapter);
 
     }
 }

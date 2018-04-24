@@ -9,6 +9,10 @@ public class Results {
 
     }
 
+    public Results(String title){
+        this.title = title;
+    }
+
     public Results(String title, String content) {
         this.title = title;
         this.content = content;
