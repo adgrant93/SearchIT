@@ -34,7 +34,21 @@ public class displaySearch extends AppCompatActivity {
         Results hi = new Results("ok dad");
         resultsList.add(results2);
         resultsList.add(hi);
-        mAdapter = new DisplaySearchAdapter(resultsList);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        resultsList.add(results2);
+        resultsList.add(hi);
+        mAdapter = new DisplaySearchAdapter(this, resultsList);
         mRecyclerView.setAdapter(mAdapter);
 
     }
