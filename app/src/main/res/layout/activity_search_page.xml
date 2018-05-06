@@ -19,13 +19,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="text"
-        android:hint="What would you like to know?"
+        android:hint="What would you like to search?"
         android:id="@+id/searchField"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Press Me!"
-        android:onClick="openWebPage"/>
+        android:onClick="displayResults"/>
 
 </LinearLayout>

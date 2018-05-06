@@ -23,7 +23,7 @@ public class searchPage extends AppCompatActivity {
     }
 
 
-    public final void openWebPage(View view){
+    public final void displayResults(View view){
         EditText editText = (EditText) findViewById(R.id.searchField);
         String searchParams = editText.toString();
         Intent intent = new Intent(this, displaySearch.class);

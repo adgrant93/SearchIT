@@ -51,6 +51,8 @@ public class displaySearch extends AppCompatActivity {
         mAdapter = new DisplaySearchAdapter(this, resultsList);
         mRecyclerView.setAdapter(mAdapter);
 
+        
+
     }
 }
 
